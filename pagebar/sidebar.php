@@ -61,16 +61,34 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Login เข้าสู่ระบบ</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="container">
+                        <form method="post" action="process/check-login.php">
+                            <div id="login-row" class="row justify-content-center align-items-center">
+                                <div id="login-column" class="col-md-6">
+                                    <div id="login-box" class="col-md-12">
+
+                                        <label>ชื่อผู้ใช้งาน</label>
+                                        <input type="text" class="form-control mb-2" name="username" id="username">
+                                        <label>รหัสผ่าน</label>
+                                        <input type="password" class="form-control mb-2" name="password" id="password">
+                                        <input type="checkBox" onclick="showpass();"> แสดงรหัสผ่าน
+                                        <br>
+                                        <u class="ml-auto"> <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#register">ลงทะเบียนเพิ่มผู้ใช้</a></u>
+
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-ban"></i> ยกเลิก</button>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> ตกลง</button>
                 </div>
             </div>
+            </form>
         </div>
     </div>

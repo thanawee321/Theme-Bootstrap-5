@@ -1,4 +1,6 @@
 <!-- Footer Page -->
+</div>
+    </div>
 <div class="footer">
-  <small>CopyRight © by LUCIFERADULT</small>
+  <small>CopyRight © by ..YOUR.NAME..</small>
 </div>
